@@ -3,8 +3,8 @@ from sklearn.feature_extraction import DictVectorizer
 from sklearn.tree import DecisionTreeClassifier
 
 # 数据加载
-train_data = pd.read_csv('./train.csv')
-test_data = pd.read_csv('./test.csv')
+train_data = pd.read_csv('/Users/amy/Downloads/Titanic_Data-master/train.csv')
+test_data = pd.read_csv('/Users/amy/Downloads/Titanic_Data-master/test.csv')
 # 数据探索
 print(train_data.info())
 print('-'*30)
