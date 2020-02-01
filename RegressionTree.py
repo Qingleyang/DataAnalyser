@@ -22,4 +22,4 @@ dtr.fit(train_features, train_price)
 predict_price = dtr.predict(test_features)
 # 测试集的结果评价
 print('回归树二乘偏差均值:', mean_squared_error(test_price, predict_price))
-print('回归树绝对值偏差均值:', mean_absolute_error(test_price, predict_price)) 
+print('回归树绝对值偏差均值:', mean_absolute_error(test_price, predict_price))
