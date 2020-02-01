@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
+
 # 准备数据集
 iris=load_iris()
 # 获取特征集和分类标识
