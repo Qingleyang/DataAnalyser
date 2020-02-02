@@ -40,4 +40,4 @@ for x in range(width):
     for y in range(height):
         # 根据类别设置图像灰度, 类别0 灰度值为255， 类别1 灰度值为127
         pic_mark.putpixel((x, y), int(256/(label[x][y]+1))-1)
-pic_mark.save("weixin_mark.jpg", "JPEG")
+pic_mark.save("/Users/amy/Downloads/kmeans-master/weixin_mark.jpg", "JPEG")
