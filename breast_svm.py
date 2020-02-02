@@ -63,3 +63,4 @@ model.fit(train_X,train_y)
 # 用测试集做预测
 prediction=model.predict(test_X)
 print('准确率: ', metrics.accuracy_score(prediction,test_y))
+
