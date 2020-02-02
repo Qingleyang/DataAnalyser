@@ -7,7 +7,7 @@ from sklearn.mixture import GaussianMixture
 from sklearn.preprocessing import StandardScaler
 
 # 数据加载，避免中文乱码问题
-data_ori = pd.read_csv('./heros7.csv', encoding='gb18030')
+data_ori = pd.read_csv('/Users/amy/Downloads/EM_data-master/heros7.csv', encoding='gb18030')
 features = [u'最大生命', u'生命成长', u'初始生命', u'最大法力', u'法力成长', u'初始法力', u'最高物攻', u'物攻成长', u'初始物攻', u'最大物防', u'物防成长', u'初始物防',
             u'最大每5秒回血', u'每5秒回血成长', u'初始每5秒回血', u'最大每5秒回蓝', u'每5秒回蓝成长', u'初始每5秒回蓝', u'最大攻速', u'攻击范围']
 data = data_ori[features]
@@ -40,7 +40,7 @@ prediction = gmm.predict(data)
 print(prediction)
 # 将分组结果输出到 CSV 文件中
 data_ori.insert(0, '分组', prediction)
-data_ori.to_csv('./hero_out.csv', index=False, sep=',')
+data_ori.to_csv('/Users/amy/Downloads/EM_data-master/hero_out.csv', index=False, sep=',')
 
 from sklearn.metrics import calinski_harabaz_score
 
