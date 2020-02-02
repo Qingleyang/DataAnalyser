@@ -26,7 +26,7 @@ def load_data(filePath):
     return np.mat(data), width, height
 
 # 加载图像，得到规范化的结果img，以及图像尺寸
-img, width, height = load_data('./weixin.jpg')
+img, width, height = load_data('/Users/amy/Downloads/kmeans-master/weixin.jpg')
 
 # 用K-Means对图像进行2聚类
 kmeans =KMeans(n_clusters=2)
