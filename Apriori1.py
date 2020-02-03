@@ -1,6 +1,7 @@
 
 # -*- coding: utf-8 -*-
 from efficient_apriori import apriori
+import fptools as fp
 import csv
 director = u'宁浩'
 file_name = './'+director+'.csv'
