@@ -8,9 +8,9 @@ from selenium import webdriver
 import csv
 driver = webdriver.Chrome()
 # 设置想要下载的导演 数据集
-director = u'宁浩'
+director = u'张艺谋'
 # 写CSV文件
-file_name = './' + director + '.csv'
+file_name = '/Users/amy/Downloads/director/' + director + '.csv'
 base_url = 'https://movie.douban.com/subject_search?search_text='+director+'&cat=1002&start='
 out = open(file_name,'w', newline='', encoding='utf-8-sig')
 csv_write = csv.writer(out, dialect='excel')

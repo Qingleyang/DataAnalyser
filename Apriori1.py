@@ -3,8 +3,8 @@
 from efficient_apriori import apriori
 import fptools as fp
 import csv
-director = u'宁浩'
-file_name = './'+director+'.csv'
+director = u'张艺谋'
+file_name = '/Users/amy/Downloads/director/'+director+'.csv'
 lists = csv.reader(open(file_name, 'r', encoding='utf-8-sig'))
 # 数据加载
 data = []
